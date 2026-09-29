@@ -417,3 +417,31 @@ body { background: var(--todo-bg); color: var(--todo-ink); }
     .todo-add { flex-direction: column; }
 }
 
+/* -------------- Update Styles for Welcome Page -------------- */
+
+/* ---- Welcome page: paste at the END of web/css/site.css ---- */
+
+.welcome {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 5rem 1rem 4rem;
+    text-align: center;
+}
+.welcome-emoji { font-size: 4rem; line-height: 1; margin-bottom: 1rem; }
+.welcome h1 { font-size: 2.5rem; font-weight: 700; margin: 0 0 1rem; }
+.welcome-text {
+    font-size: 1.15rem; line-height: 1.6;
+    color: var(--todo-muted, #6b7785);
+    margin: 0 auto 2rem; max-width: 34em;
+}
+.welcome-btn {
+    background: var(--todo-accent, #0f766e);
+    border-color: var(--todo-accent, #0f766e);
+    padding: .75rem 2rem; border-radius: 10px; font-weight: 600;
+}
+.welcome-btn:hover { background: #0b5f58; border-color: #0b5f58; }
+
+@media (max-width: 576px) {
+    .welcome { padding-top: 3rem; }
+    .welcome h1 { font-size: 2rem; }
+}
